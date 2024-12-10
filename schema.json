@@ -1,5 +1,5 @@
 {
-    "type": "<< Possible Values: connector | trigger | credentials >>", 
+    "type": "connector", 
     "key": "<< Keyword for the Connector that can be used in searching: ex. Amazon Comprehend >>",
     "componentId": "<< Unique identifier of the connector: ex. amazon-comprehend >>",
     "name": "<< Full Name of the Connector: ex. CXF Amazon Comprehend >>",
