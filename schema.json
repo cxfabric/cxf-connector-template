@@ -16,7 +16,7 @@
             "applicationType": [
                 "aws"
             ],
-            "payloadable": << true if the expected result is a json >>,
+            "payloadable": true,
             "actionArguments": {
                 "functionName": "actionfunction1",
                 "functionParameters": [
