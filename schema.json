@@ -10,118 +10,30 @@
     ],
     "actions": [
         {
-            "actionID": "Comprehend",
-            "actionName": "Detect Sentiment",
-            "isCompleted": false,
+            "actionID": "<< unique id of the action >>",
+            "actionName": "<< descriptive name of the action >>",
             "isCredentialSupported": true,
             "applicationType": [
                 "aws"
             ],
-            "receivedData": "",
-            "returnData": "",
-            "payloadable": true,
-            "variables": [
-                { "name": "access_key_id", "description": "", "defaultvalue": "" },
-                { "name": "secret_access_key", "description": "", "defaultvalue": "" },
-                { "name": "targetText", "description": "", "defaultvalue": "" },
-                { "name": "languageCode", "description": "", "defaultvalue": "en" }
-            ],
+            "payloadable": << true if the expected result is a json >>,
             "actionArguments": {
-                "functionName": "detectSentiment",
+                "functionName": "actionfunction1",
                 "functionParameters": [
-                    "targetText",
-                    "languageCode"
+                    "param1",
+                    "param2",
+                    "param3"
                 ]
             },
             "dataInsideAction": [
                 {
-                    "groupname": "Sentiment",
-                    "field": "targetText",
-                    "label": "Target Text",
+                    "groupname": "<< grouping of input elements >>",
+                    "field": "<< unique field name >>",
+                    "label": "<< visible text label of the connector >>",
                     "type": "text",
                     "multiline": true,
                     "placeholder": "Target Text",
                     "value": ""
-                },
-                {
-                    "groupname": "Sentiment",
-                    "field": "languageCode",
-                    "label": "Language Code",
-                    "type": "dropdown",
-                    "options": [
-                        {"value": "en", "text": "En"},
-                        {"value": "es", "text": "Es"},
-                        {"value": "fr", "text": "Fr"},
-                        {"value": "de", "text": "De"},
-                        {"value": "it", "text": "It"},
-                        {"value": "pt", "text": "Pt"},
-                        {"value": "ar", "text": "Ar"},
-                        {"value": "hi", "text": "Hi"},
-                        {"value": "ja", "text": "Ja"},
-                        {"value": "ko", "text": "Ko"},
-                        {"value": "zh", "text": "Zh"},
-                        {"value": "zh-TW", "text": "Zh"}
-                    ],
-                    "placeholder": "Language Code",
-                    "value": "en"
-                }
-            ]
-        },
-        {
-            "actionID": "Comprehend",
-            "actionName": "Detect Sentiment",
-            "isCompleted": false,
-            "isCredentialSupported": true,
-            "applicationType": [
-                "aws"
-            ],
-            "receivedData": "",
-            "returnData": "",
-            "payloadable": true,
-            "variables": [
-                { "name": "access_key_id", "description": "", "defaultvalue": "" },
-                { "name": "secret_access_key", "description": "", "defaultvalue": "" },
-                { "name": "targetText", "description": "", "defaultvalue": "" },
-                { "name": "languageCode", "description": "", "defaultvalue": "en" }
-            ],
-            "actionArguments": {
-                "functionName": "detectSentiment",
-                "functionParameters": [
-                    "targetText",
-                    "languageCode"
-                ]
-            },
-            "dataInsideAction": [
-                {
-                    "groupname": "Sentiment",
-                    "field": "targetText",
-                    "label": "Target Text",
-                    "type": "text",
-                    "multiline": true,
-                    "placeholder": "Target Text",
-                    "value": ""
-                },
-                {
-                    "groupname": "Sentiment",
-                    "field": "languageCode",
-                    "label": "Language Code",
-                    "type": "dropdown",
-                    "options": [
-                        {"value": "en", "text": "En"},
-                        {"value": "es", "text": "Es"},
-                        {"value": "fr", "text": "Fr"},
-                        {"value": "de", "text": "De"},
-                        {"value": "it", "text": "It"},
-                        {"value": "pt", "text": "Pt"},
-                        {"value": "ar", "text": "Ar"},
-                        {"value": "hi", "text": "Hi"},
-                        {"value": "ja", "text": "Ja"},
-                        {"value": "ko", "text": "Ko"},
-                        {"value": "zh", "text": "Zh"},
-                        {"value": "zh-TW", "text": "Zh"}
-                    ],
-                    "placeholder": "Language Code",
-                    "value": "en"
                 }
             ]
         }
